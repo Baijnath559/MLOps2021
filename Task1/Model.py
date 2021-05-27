@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
 
 import pandas as pd
 df = pd.read_csv('Salary_Data.csv')
@@ -14,10 +9,10 @@ from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 model.fit(x,y)
 model.coef_
-model.predict([[2.5]])
+predicted_value = model.predict([[2.5]])
+print("Predited salary for feature value 2.5")
+print(predicted_value)
 
-
-# In[ ]:
 
 
 
